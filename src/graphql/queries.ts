@@ -1,14 +1,21 @@
 import { gql } from "@apollo/client";
 
-export const GET_POSTS = gql`
+export const GET_LATEST_POSTS = gql`
   query {
-    posts {
+    posts(first: 3) {
       edges {
         node {
           id
-          author {
+          date
+          title
+          categories {
+            nodes {
+              name
+            }
+          }
+          featuredImage {
             node {
-              firstName
+              sourceUrl
             }
           }
         }
