@@ -1,14 +1,14 @@
 import { client } from "@/graphql/apollo-client";
 import { GET_LATEST_POSTS } from "@/graphql/queries";
 import { LatestsPostsAPIResponse } from "@/interfaces/LatestsPostsApi.interface";
-import AboutSection from "@/components/AboutSection/AboutSection";
-import ContactSection from "@/components/ContactSection/ContactSection";
-import DoAndDontsSection from "@/components/DoAndDontsSection/DoAndDontsSection";
+import AboutSection from "@/components/HomePage/AboutSection/AboutSection";
+import ContactSection from "@/components/HomePage/ContactSection/ContactSection";
+import DoAndDontsSection from "@/components/HomePage/DoAndDontsSection/DoAndDontsSection";
 import Footer from "@/components/Footer/Footer";
-import HomeSection from "@/components/HomeSection/HomeSection";
-import LatestArticlesSection from "@/components/LatestArticlesSection/LatestArticlesSection";
-import ServicesSection from "@/components/ServicesSection/ServicesSection";
-import VisionSection from "@/components/VisionSection/VisionSection";
+import HomeSection from "@/components/HomePage/HomeSection/HomeSection";
+import LatestArticlesSection from "@/components/HomePage/LatestArticlesSection/LatestArticlesSection";
+import ServicesSection from "@/components/HomePage/ServicesSection/ServicesSection";
+import VisionSection from "@/components/HomePage/VisionSection/VisionSection";
 
 export async function getServerSideProps() {
   const data = await client.query<LatestsPostsAPIResponse>({

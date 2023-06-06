@@ -6,6 +6,7 @@ import classNames from "classnames";
 import useMounted from "@/hooks/useMounted";
 import { navItemsDesktop, navItemsMobile } from "./constants";
 import { AiOutlineMenu } from "react-icons/ai";
+import { LOGO_ICON } from "@/images";
 
 const Header = () => {
   const mounted = useMounted();
@@ -47,7 +48,7 @@ const Mobile = () => {
   return (
     <nav className="relative px-8">
       <div className="flex justify-between">
-        <Image src="/logo.svg" alt="Logo" width={50} height={50} />
+        <Image src={LOGO_ICON} alt="Logo" width={50} height={50} />
         <div
           className={classNames(
             "flex items-center gap-2 cursor-pointer",

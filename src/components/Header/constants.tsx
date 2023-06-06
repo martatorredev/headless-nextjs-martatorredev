@@ -1,20 +1,21 @@
+import { LOGO_ICON } from "@/images";
 import Image from "next/image";
 
 const navItemsDesktop = [
   {
     id: 1,
     content: "About",
-    path: "#about",
+    path: "/#about",
   },
   {
     id: 2,
     content: "Services",
-    path: "#services",
+    path: "/#services",
   },
   {
     id: 3,
-    content: <Image src="/logo.svg" alt="Logo" width={65} height={65} />,
-    path: "",
+    content: <Image src={LOGO_ICON} alt="Logo" width={65} height={65} />,
+    path: "/",
   },
   {
     id: 4,
@@ -24,7 +25,7 @@ const navItemsDesktop = [
   {
     id: 5,
     content: "Contact",
-    path: "#contact",
+    path: "/#contact",
   },
 ];
 

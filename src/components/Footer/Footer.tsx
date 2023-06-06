@@ -1,4 +1,6 @@
+import { GREENWEB_IMAGE, LOGO_ICON, SELLO_COMPENSA_IMAGE } from "@/images";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 import {
   FaLinkedin,
@@ -8,6 +10,7 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <footer className="min-h-screen background-circuit">
       <div className="flex flex-col items-center px-8 pt-48 pb-12">
@@ -16,7 +19,10 @@ const Footer = () => {
             <a className="text-white underline transition cursor-pointer hover:text-appGreen">
               Marta Torre's Blog
             </a>
-            <a className="text-white underline transition cursor-pointer hover:text-appGreen">
+            <a
+              onClick={() => router.push("/corporate-social-responsibility")}
+              className="text-white underline transition cursor-pointer hover:text-appGreen"
+            >
               Corporate Social Responsibility.
             </a>
             <div className="flex gap-10">
@@ -39,7 +45,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-center gap-5">
             <a
-              href="#contact"
+              onClick={() => router.push("/#contact")}
               className="text-white underline transition cursor-pointer hover:text-appGreen"
             >
               Contact me
@@ -50,7 +56,10 @@ const Footer = () => {
             >
               hey@martatorre.dev
             </a>
-            <a className="text-white underline transition cursor-pointer hover:text-appGreen">
+            <a
+              onClick={() => router.push("/my-code-of-ethics")}
+              className="text-white underline transition cursor-pointer hover:text-appGreen"
+            >
               Code of Ethics
             </a>
             <div className="flex gap-10">
@@ -73,7 +82,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-16">
-          <Image src="/logo.svg" alt="logo" width={60} height={60} />
+          <Image src={LOGO_ICON} alt="logo" width={60} height={60} />
           <p className="mt-8 text-center text-white">
             © 2023 This site and its contents are by Marta Torre is licensed
             under
@@ -96,21 +105,31 @@ const Footer = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-8 mt-12">
           <Image
-            src="/sello-compensa.webp"
+            src={SELLO_COMPENSA_IMAGE}
             alt="sello-compensa"
             width={150}
             height={150}
           />
           <Image
-            src="/green-web.png"
+            src={GREENWEB_IMAGE}
             alt="green-web"
             width={300}
             height={150}
           />
         </div>
         <div className="flex justify-center gap-4 mt-8">
-          <a className="text-white underline cursor-pointer">Privacy Policy</a>
-          <a className="text-white underline cursor-pointer">Legal Notice</a>
+          <a
+            onClick={() => router.push("/privacy-policy")}
+            className="text-white underline cursor-pointer"
+          >
+            Privacy Policy
+          </a>
+          <a
+            onClick={() => router.push("/legal-notice")}
+            className="text-white underline cursor-pointer"
+          >
+            Legal Notice
+          </a>
         </div>
       </div>
     </footer>
