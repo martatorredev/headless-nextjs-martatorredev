@@ -95,8 +95,7 @@ const Footer = () => {
             </a>
             |
             <a
-              href="https://en.martatorre.dev/acknowledgments/"
-              target="_blank"
+              onClick={() => router.push("/acknowledgments")}
               className="ml-1 underline transition cursor-pointer text-appGreen hover:bg-appGreen hover:text-black"
             >
               Acknowledgments

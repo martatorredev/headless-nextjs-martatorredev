@@ -8,6 +8,7 @@ const MANTENIMIENTO_WEB_ICON = `${WP_IMAGE_PREFIX}/2023/03/mantenimiento-web-ico
 const CROWN_ICON = `${WP_IMAGE_PREFIX}/2023/03/crown-icon.svg`;
 const VISION_ICON = `${WP_IMAGE_PREFIX}/2023/03/vision-icon.svg`;
 const THANKS_ICON = `${WP_IMAGE_PREFIX}/2023/03/thanks-icon.svg`;
+const PEOPLE_ICON = `${WP_IMAGE_PREFIX}/2023/03/people-icon.svg`;
 const CANTABRIA_CONBICI_IMAGE = `${WP_IMAGE_PREFIX}/2023/03/cantabria-conbici-logo.png`;
 const AFROFEMINAS_IMAGE = `${WP_IMAGE_PREFIX}/2023/03/afrofeminas-logo-1024x359.webp`;
 const CRITERIA_IMAGE = `${WP_IMAGE_PREFIX}/2023/03/citeria-logo.svg`;
@@ -24,6 +25,7 @@ export {
   THANKS_ICON,
   LOGO_ICON,
   VISION_ICON,
+  PEOPLE_ICON,
   CROWN_ICON,
   DESARROLLO_MEDIDA_ICON,
   OPTIMIZACION_WPO_ICON,
