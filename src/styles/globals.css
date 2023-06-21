@@ -24,6 +24,24 @@ body {
   background-size: cover;
   mix-blend-mode: lighten;
 }
+.background-blog {
+  background-image: url("https://en.martatorre.dev/wp-content/uploads/2023/03/bg-blog.webp");
+  background-size: contain;
+  mix-blend-mode: lighten;
+  background-repeat: no-repeat;
+}
+.background-404 {
+  background-image: url("https://en.martatorre.dev/wp-content/uploads/2023/03/neon-404-cropped.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-blog-id {
+  background-image: url("https://en.martatorre.dev/wp-content/uploads/2023/03/bg-blog.webp");
+  background-size: cover;
+  mix-blend-mode: lighten;
+  background-repeat: no-repeat;
+}
 .background-about {
   background: url("https://en.martatorre.dev/wp-content/uploads/2023/03/fractal-fondo.webp"),
     #061e3a;

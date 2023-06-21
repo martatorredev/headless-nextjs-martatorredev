@@ -1,4 +1,5 @@
 import { LatestPostEdge } from "@/interfaces/LatestsPostsApi.interface";
+import { reemplazarEspaciosPorGuiones } from "@/utils/utils";
 import Image from "next/image";
 
 type Props = {
@@ -13,6 +14,10 @@ const BlogItem = ({ post }: Props) => {
   const formatedDate = new Intl.DateTimeFormat("en-US", dateFormatProps).format(
     new Date(post?.node?.date)
   );
+
+  const handleGoToPost = (id: string) => {
+    window.open(`https://en.martatorre.dev/${id}`, "_blank");
+  };
 
   return (
     <div className="max-w-[345px]  w-full">
@@ -40,7 +45,12 @@ const BlogItem = ({ post }: Props) => {
           </a>
         </div>
         <div>
-          <button className="px-10 py-4 text-white uppercase transition bg-appBlack hover:bg-appBlue">
+          <button
+            onClick={() =>
+              handleGoToPost(reemplazarEspaciosPorGuiones(post?.node?.title))
+            }
+            className="px-10 py-4 text-white uppercase transition bg-appBlack hover:bg-appBlue"
+          >
             Read post
           </button>
         </div>

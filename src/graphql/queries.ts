@@ -62,3 +62,68 @@ export const GET_MY_CODE_OF_ETHICS = gql`
     }
   }
 `;
+
+export const GET_POSTS = gql`
+  query {
+    posts {
+      edges {
+        node {
+          id
+          date
+          title
+          categories {
+            nodes {
+              name
+            }
+          }
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const GET_CATEGORIES = gql`
+  query {
+    categories {
+      edges {
+        node {
+          id
+          name
+          count
+        }
+      }
+    }
+  }
+`;
+
+export const GET_POSTS_BY_TITLE = (title: string) => gql`
+query {
+  posts(where: {title:"${title}"}) {
+    edges {
+      node {
+        id
+        date
+        title
+        date
+        modified
+        content
+        categories {
+          nodes {
+            name
+          }
+        }
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+      }
+    }
+  }
+}
+`;

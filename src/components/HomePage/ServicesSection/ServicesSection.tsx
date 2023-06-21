@@ -4,7 +4,7 @@ import { servicesItems } from "./constants";
 
 const ServicesSection = () => {
   return (
-    <section className="w-full max-w-6xl pt-56 pb-24 mx-auto">
+    <section className="w-full max-w-6xl pt-24 pb-24 mx-auto">
       <div className="flex flex-wrap justify-center gap-32" id="services">
         {servicesItems.map(({ title, description, iconPath, cta }) => (
           <div

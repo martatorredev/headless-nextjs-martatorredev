@@ -20,7 +20,7 @@ const navItemsDesktop = [
   {
     id: 4,
     content: "Blog",
-    path: "",
+    path: "/blog",
   },
   {
     id: 5,
