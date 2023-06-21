@@ -1,11 +1,11 @@
 import TextPage from "@/components/TextPage/TextPage";
 import { client } from "@/graphql/apollo-client";
-import { GET_LEGAL_NOTICE, GET_POSTS } from "@/graphql/queries";
+import { GET_LEGAL_NOTICE } from "@/graphql/queries";
 import { PagesAPIResponse } from "@/interfaces/PagesApi.interface";
 
 export async function getServerSideProps() {
   const data = await client.query<PagesAPIResponse>({
-    query: GET_POSTS,
+    query: GET_LEGAL_NOTICE,
   });
 
   return {

@@ -1,15 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #061e3a;
+  background-color: #011046;
   font-family: sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Space Grotesk", sans-serif;
+}
 .background-home {
-  background-image: url("https://en.martatorre.dev/wp-content/uploads/2023/03/background.webp");
+  /* background-image: url("https://en.martatorre.dev/wp-content/uploads/2023/03/background.webp"); */
+  background-image: url("../../public/assets/home-bg.png");
   background-position: center;
   background-size: cover;
 }
@@ -51,7 +60,12 @@ body {
   background-blend-mode: overlay;
 }
 .background-marta {
-  background: url("https://en.martatorre.dev/wp-content/uploads/2023/03/martatorre-1024x1024.webp");
+  background: linear-gradient(
+      0deg,
+      rgba(1, 16, 70, 0.25),
+      rgba(1, 16, 70, 0.25)
+    ),
+    url("https://en.martatorre.dev/wp-content/uploads/2023/03/martatorre-1024x1024.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -60,22 +74,6 @@ body {
   min-width: 250px;
 }
 
-.background-marta::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 100%;
-  background-image: linear-gradient(
-    90deg,
-    rgba(17, 238, 169, 0.4) 20.31%,
-    rgba(3, 149, 252, 0.4) 66.15%,
-    rgba(0, 84, 255, 0.4) 92.71%
-  );
-  background-blend-mode: overlay;
-}
 .background-marta-csr {
   background: url("https://en.martatorre.dev/wp-content/uploads/2023/03/martatorre-avantar-mobileweekalcala.webp");
   background-position: center;
@@ -103,15 +101,7 @@ body {
   background-blend-mode: overlay;
 }
 
-.background-fractal {
-  background: url("https://en.martatorre.dev/wp-content/uploads/2023/03/fractal-bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .vision-gradient {
-  background-color: #061e3a;
   border-image: linear-gradient(
       142deg,
       rgba(17, 238, 169, 1) 27%,
@@ -121,13 +111,6 @@ body {
     1;
   border-image-slice: 1;
   padding: 10px; /* Añade el espacio de padding que necesites */
-}
-
-.background-circuit {
-  background: url("https://en.martatorre.dev/wp-content/uploads/2023/03/circuit.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .background-csr {

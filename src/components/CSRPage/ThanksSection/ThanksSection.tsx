@@ -4,7 +4,7 @@ import { THANKS_ICON } from "@/images";
 
 const ThanksSection = () => {
   return (
-    <section className="min-h-screen pt-24 background-fractal">
+    <section className="flex items-center justify-center min-h-screen py-8">
       <div className="flex flex-col items-center px-8 ">
         <div className="flex items-center gap-1 mt-12 xs:gap-4">
           <div className="h-[300px] w-[4px] bg-appGreen" />

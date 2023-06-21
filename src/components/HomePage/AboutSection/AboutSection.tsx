@@ -21,14 +21,17 @@ export default function AboutSection() {
   if (!mounted) return null;
 
   return (
-    <section className="py-8">{isMedium ? <Desktop /> : <Mobile />}</section>
+    <section className="pt-24">
+      <div className="w-full h-[550px] background-home" />
+      {isMedium ? <Desktop /> : <Mobile />}
+    </section>
   );
 }
 
 const Desktop = () => {
   return (
-    <div className="max-w-6xl min-h-screen px-8 mx-auto">
-      <div className="relative flex items-center pt-24">
+    <div className="relative -top-[7rem] max-w-6xl min-h-screen px-8 mx-auto">
+      <div className="relative flex items-center ">
         <div className="absolute z-50">
           <div className="flex w-full">
             <div className="mb-16  w-full  flex items-center  text-left pr-5 justify-end max-w-[300px]">
@@ -82,8 +85,8 @@ const Desktop = () => {
 
 const Mobile = () => {
   return (
-    <>
-      <div className="flex items-center justify-center max-w-6xl px-8 mx-auto pt-36">
+    <div className="relative -top-[10rem]">
+      <div className="flex items-center justify-center max-w-6xl px-8 mx-auto ">
         <div
           id="about"
           className="w-[250px] h-[250px] xs:w-[360px] xs:h-[360px] rounded-full background-marta "
@@ -123,6 +126,6 @@ const Mobile = () => {
           {BUTTON_TEXT}
         </button>
       </div>
-    </>
+    </div>
   );
 };

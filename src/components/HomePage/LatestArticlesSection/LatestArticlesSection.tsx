@@ -8,7 +8,7 @@ type Props = {
 
 const LatestArticlesSection = ({ posts }: Props) => {
   return (
-    <section className="pt-24 pb-24 background-fractal">
+    <section className="pt-24 pb-24">
       <div className="flex flex-col items-center px-8 ">
         <span className="block mb-4 text-2xl text-center text-appGreen">
           {TEXT1}

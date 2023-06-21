@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer className="min-h-screen background-circuit">
+    <footer className="min-h-screen">
       <div className="flex flex-col items-center px-8 pt-48 pb-12">
         <div className="flex flex-wrap justify-center w-full max-w-xl gap-12 mx-auto xs:justify-between">
           <div className="flex flex-col items-center gap-5">
@@ -82,7 +82,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col items-center mt-16">
-          <Image src={LOGO_ICON} alt="logo" width={60} height={60} />
+          <Image
+            src="/assets/logo-footer.svg"
+            alt="logo"
+            width={400}
+            height={60}
+          />
           <p className="mt-8 text-center text-white">
             © 2023 This site and its contents are by Marta Torre is licensed
             under

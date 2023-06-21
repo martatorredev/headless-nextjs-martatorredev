@@ -23,13 +23,13 @@ const ITEM4 = (
   </>
 );
 const ITEM5 = (
-  <>
+  <div>
     Co-founder of
     <a className="ml-2 underline cursor-pointer text-appGreen hover:bg-appGreen hover:text-black">
       WPFem
     </a>
     , a platform that promotes female participation in WordPress events.
-  </>
+  </div>
 );
 const ITEM6 = (
   <>

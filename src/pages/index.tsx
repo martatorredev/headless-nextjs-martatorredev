@@ -9,6 +9,7 @@ import HomeSection from "@/components/HomePage/HomeSection/HomeSection";
 import LatestArticlesSection from "@/components/HomePage/LatestArticlesSection/LatestArticlesSection";
 import ServicesSection from "@/components/HomePage/ServicesSection/ServicesSection";
 import VisionSection from "@/components/HomePage/VisionSection/VisionSection";
+import ContactSectionNew from "@/components/HomePage/ContactSection/ContactSectionNew";
 
 export async function getServerSideProps() {
   const data = await client.query<LatestsPostsAPIResponse>({
@@ -35,7 +36,7 @@ export default function Home({ latestsPosts }: Props) {
       <VisionSection />
       <DoAndDontsSection />
       <LatestArticlesSection posts={latestsPosts?.data?.posts} />
-      <ContactSection />
+      <ContactSectionNew />
       <Footer />
     </main>
   );

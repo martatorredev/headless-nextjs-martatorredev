@@ -3,7 +3,7 @@ import { DESCRIPTION, SUBTITLE, TITLE } from "./constants";
 
 const HomeSection = () => {
   return (
-    <section className="min-h-screen background-home">
+    <section>
       <Header />
       <div className="max-w-5xl px-8 mx-auto mt-[10vh] lg:mt-[20vh]">
         <h1 className="text-4xl text-center text-white uppercase md:text-6xl">

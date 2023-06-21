@@ -34,6 +34,7 @@ module.exports = {
         appGreen: "#11eea9",
         appBlack: "#061e3a",
         appBlue: "#0395fc",
+        appSky: "#11D9ED",
       },
     },
   },
