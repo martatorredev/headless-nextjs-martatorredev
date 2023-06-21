@@ -110,7 +110,7 @@ h5 {
     )
     1;
   border-image-slice: 1;
-  padding: 10px; /* Añade el espacio de padding que necesites */
+  padding: 10px;
 }
 
 .background-csr {

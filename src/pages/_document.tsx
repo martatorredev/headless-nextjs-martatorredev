@@ -14,6 +14,16 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <title>Marta Torre</title>
+        <meta
+          name="description"
+          content="Discover what I can do for your project. I am a freelance fullstack developer specialized in WordPress and I will be able to help you in your business."
+        ></meta>
+        <link
+          rel="icon"
+          href="https://en.martatorre.dev/wp-content/uploads/2023/05/cropped-favicon-32x32.png"
+          sizes="32x32"
+        ></link>
       </Head>
       <body>
         <Main />
