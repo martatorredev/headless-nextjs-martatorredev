@@ -20,7 +20,6 @@ type Props = {
 };
 
 export default function Page({ data }: Props) {
-  console.log({ data });
   return (
     <TextPage
       title={data?.data?.pages?.edges[0]?.node?.title}

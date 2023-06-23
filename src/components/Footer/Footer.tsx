@@ -1,6 +1,7 @@
 import { GREENWEB_IMAGE, LOGO_ICON, SELLO_COMPENSA_IMAGE } from "@/images";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Script from "next/script";
 import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 import {
   FaLinkedin,
@@ -16,7 +17,10 @@ const Footer = () => {
       <div className="flex flex-col items-center px-8 pt-48 pb-12">
         <div className="flex flex-wrap justify-center w-full max-w-xl gap-12 mx-auto xs:justify-between">
           <div className="flex flex-col items-center gap-5">
-            <a className="text-white underline transition cursor-pointer hover:text-appGreen">
+            <a
+              onClick={() => router.push("/blog")}
+              className="text-white underline transition cursor-pointer hover:text-appGreen"
+            >
               Marta Torre's Blog
             </a>
             <a
@@ -24,6 +28,13 @@ const Footer = () => {
               className="text-white underline transition cursor-pointer hover:text-appGreen"
             >
               Corporate Social Responsibility.
+            </a>
+            <a
+              href="https://martatorre.dev/"
+              target="_blank"
+              className="text-white underline transition cursor-pointer hover:text-appGreen"
+            >
+              Spanish version
             </a>
             <div className="flex gap-10">
               <AiOutlineInstagram
@@ -106,14 +117,24 @@ const Footer = () => {
               Acknowledgments
             </a>
           </p>
+          <p className="mt-4 text-center text-white ">
+            Code is Poetry ❤️ by WordPress
+          </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-8 mt-12">
+        <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
           <Image
             src={SELLO_COMPENSA_IMAGE}
             alt="sello-compensa"
             width={150}
             height={150}
           />
+          <div>
+            <Script
+              src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+              defer
+            />
+            <div id="wcb" className="carbonbadge wcb-d"></div>
+          </div>
           <Image
             src={GREENWEB_IMAGE}
             alt="green-web"

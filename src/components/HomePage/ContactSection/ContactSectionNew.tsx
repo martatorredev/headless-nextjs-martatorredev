@@ -23,11 +23,16 @@ const ContactSectionNew = () => {
             Tell me what’s on your mind. I help you find the solution that best
             suits your project.
           </p>
-          <button className="px-12 py-4 mt-24 transition bg-appGreen hover:bg-appBlue hover:text-white">
+          <a
+            href="https://cal.com/martatorredev/free-consulting"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-12 py-4 mt-24 transition bg-appGreen hover:bg-appBlue hover:text-white"
+          >
             <h3 className="text-xl font-bold uppercase sm:text-2xl">
               Book a free session
             </h3>
-          </button>
+          </a>
         </div>
       </div>
     </section>

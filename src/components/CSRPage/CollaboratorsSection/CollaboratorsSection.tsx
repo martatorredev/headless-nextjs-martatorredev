@@ -15,12 +15,6 @@ const CollaboratorsSection = () => {
   return (
     <section className="w-full max-w-6xl px-8 pb-24 mx-auto">
       <div className="flex flex-col items-center">
-        <Image
-          src={COLABORATION_ICON}
-          alt="colaboration"
-          width={120}
-          height={120}
-        />
         <p className="max-w-md mt-8 text-2xl text-center text-appGreen">
           These are some of the organizations I am currently collaborating with
         </p>
@@ -29,15 +23,14 @@ const CollaboratorsSection = () => {
         </h2>
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           <Image
-            src={CANTABRIA_CONBICI_IMAGE}
+            src="/assets/sporting.svg"
             alt="cantabria"
             width={120}
             height={120}
           />
           <Image
-            src={AFROFEMINAS_IMAGE}
+            src="/assets/cienciaterapia.svg"
             alt="afrofeminas"
-            className="invert"
             width={230}
             height={100}
           />
@@ -56,7 +49,6 @@ const CollaboratorsSection = () => {
           <Image src={CRUZ_ROJA_IMAGE} alt="cruzroja" width={150} height={90} />
           <Image src={MEDECINS_IMAGE} alt="medecins" width={150} height={70} />
           <Image src={INTERMON_IMAGE} alt="intermon" width={190} height={60} />
-          <Image src={OPENARMS_IMAGE} alt="openarms" width={150} height={150} />
         </div>
       </div>
     </section>

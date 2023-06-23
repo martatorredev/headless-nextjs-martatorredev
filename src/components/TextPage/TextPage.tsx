@@ -8,11 +8,12 @@ type Props = {
 const TextPage = ({ html, title }: Props) => {
   return (
     <section>
-      <div className="background-neon min-h-[40vh]">
+      <div className="min-h-[40vh]">
         <Header />
-        <h2 className="mt-[10vh] uppercase text-5xl text-center text-white">
+        <h2 className="mt-[10vh] uppercase text-5xl text-center text-white pb-24">
           {title}
         </h2>
+        <div className="background-home h-[290px] w-full" />
       </div>
       <div className="py-24 bg-white">
         <section className="w-full max-w-4xl px-8 mx-auto">

@@ -62,8 +62,8 @@ const Desktop = () => {
             </div>
           </div>
           <div className="flex justify-end w-full">
-            <div className="mb-16  w-full  flex items-center  text-left pl-5 justify-end max-w-[300px]">
-              <p className="text-white ">{ITEM5}</p>
+            <div className="mb-16  w-full  flex items-center  text-left pl-5 justify-end max-w-[300px] text-white">
+              {ITEM5}
             </div>
           </div>
           <div className="flex w-full">

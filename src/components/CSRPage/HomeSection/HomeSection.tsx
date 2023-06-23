@@ -2,7 +2,7 @@ import Header from "@/components/Header/Header";
 
 const HomeSection = () => {
   return (
-    <section className="min-h-[80vh] background-csr">
+    <section className="pb-36">
       <Header />
 
       <div className="max-w-5xl px-8 mx-auto mt-[10vh] lg:mt-[20vh]">

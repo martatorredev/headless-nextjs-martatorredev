@@ -4,7 +4,7 @@ import { paragraphs } from "./constants";
 
 const HomeSection = () => {
   return (
-    <div className="background-ack min-h-[60vh]">
+    <div className="pb-36">
       <Header />
       <section className="w-full max-w-4xl px-8 mx-auto">
         <h2 className="font-bold mt-[12vh] uppercase text-4xl text-center text-white">

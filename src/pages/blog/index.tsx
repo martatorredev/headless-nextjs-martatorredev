@@ -1,11 +1,11 @@
-import BlogItem from "@/components/BlogItem/BlogItem";
+import NewsletterSection from "@/components/BlogPage/NewsletterSection";
+import PostsSection from "@/components/BlogPage/PostsSection";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { client } from "@/graphql/apollo-client";
 import { GET_CATEGORIES, GET_POSTS } from "@/graphql/queries";
 import { CategoriesAPIResponse } from "@/interfaces/CategoriesApi.interface";
 import { LatestsPostsAPIResponse } from "@/interfaces/LatestsPostsApi.interface";
-import { useState } from "react";
 
 export async function getServerSideProps() {
   const postsData = await client.query<LatestsPostsAPIResponse>({
@@ -30,26 +30,9 @@ type Props = {
 };
 
 export default function Page({ postsData, categoriesData }: Props) {
-  const categoriesOptions = categoriesData.data.categories.edges.map(
-    (cat) => cat.node.name
-  );
-
-  const [selectedCategory, setSelectedCategory] = useState<string>("");
-
-  const posts = postsData?.data?.posts?.edges;
-
-  const filteredPosts =
-    selectedCategory === ""
-      ? posts
-      : posts?.filter((post) =>
-          post.node.categories.nodes.some(
-            (cat) => cat.name === selectedCategory
-          )
-        );
-
   return (
     <main>
-      <div className="background-blog min-h-[80vh]">
+      <div className="  min-h-[80vh]">
         <Header />
         <div className="max-w-4xl px-8 mx-auto">
           <h2 className="mt-[10vh] uppercase text-5xl text-center text-white">
@@ -78,25 +61,9 @@ export default function Page({ postsData, categoriesData }: Props) {
           </p>
         </div>
       </div>
-      <section className="px-8 pt-16 pb-24 mx-auto max-w-7xl">
-        <select
-          className="px-4 py-2 mb-8"
-          onChange={(e) => setSelectedCategory(e.target.value)}
-        >
-          <option value="">Select Category</option>
-          {categoriesOptions.map((cat, idx) => (
-            <option key={idx} value={cat}>
-              {cat}
-            </option>
-          ))}
-        </select>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center sm:justify-items-start">
-          {filteredPosts?.map((post, idx) => (
-            <BlogItem key={idx} post={post} />
-          ))}
-        </div>
-      </section>
 
+      <PostsSection postsData={postsData} categoriesData={categoriesData} />
+      <NewsletterSection />
       <Footer />
     </main>
   );
