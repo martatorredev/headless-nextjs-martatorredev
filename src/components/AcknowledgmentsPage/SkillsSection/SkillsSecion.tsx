@@ -18,7 +18,7 @@ const SkillsSecion = () => {
             Web technology
           </h2>
           <ul className="mt-2 text-lg text-center text-white">
-            <li className="mt-2">Wordpress</li>
+            <li className="mt-2">WordPress</li>
             <li className="mt-2">Gravity Forms</li>
             <li className="mt-2">Twenty Twenty-Three theme</li>
           </ul>
