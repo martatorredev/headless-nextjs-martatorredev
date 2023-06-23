@@ -16,6 +16,17 @@ const PeopleSection = () => {
           Super skilled professionals
         </h2>
         <div className="text-center">
+            <p className="mt-4 text-xl text-white">
+            Branding:
+            <a
+              href="https://lllu.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+            >
+              Patricia Rueda
+            </a>
+          </p>
           <p className="mt-4 text-xl text-white">
             UX/UI Design:
             <a
