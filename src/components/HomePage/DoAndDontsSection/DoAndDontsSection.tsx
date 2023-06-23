@@ -8,7 +8,7 @@ const DoAndDontsSection = () => {
       <div className="flex flex-col items-center grid-cols-2 gap-16 md:grid">
         <div className="   max-w-[450px] w-full pt-5 md:pt-0 md:pl-5 md:self-start">
           <h2 className="pt-4 text-4xl text-white uppercase">{TITLE}</h2>
-          <p className="pb-4 mt-8 text-lg text-appGreen">{DESCRIPTION}</p>
+          <p className="pb-4 mt-4 text-xl text-white">{DESCRIPTION}</p>
         </div>
         <div className="flex flex-col w-full gap-12 max-w-[500px]">
           {items.map(({ title, description, image }) => (
@@ -18,7 +18,7 @@ const DoAndDontsSection = () => {
             >
               <Image src={image} alt="crown" width={60} height={60} />
               <div>
-                <h3 className="text-2xl text-center uppercase text-appSky sm:text-start">
+                <h3 className="text-2xl font-semibold text-center uppercase text-appSky sm:text-start">
                   {title}
                 </h3>
                 <p className="mt-2 text-center text-white sm:text-start">

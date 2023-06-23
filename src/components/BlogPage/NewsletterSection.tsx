@@ -3,7 +3,7 @@ import React from "react";
 
 const NewsletterSection = () => {
   return (
-    <section className="w-full max-w-6xl px-8 py-24 mx-auto">
+    <section className="w-full max-w-6xl px-8 pb-24 mx-auto">
       <div className="flex flex-col items-center justify-center">
         <Image src="/assets/sword.svg" alt="sword" width={200} height={200} />
         <h2 className="mb-4 text-3xl text-white uppercase">

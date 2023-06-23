@@ -40,7 +40,7 @@ const BlogItem = ({ post }: Props) => {
             ))}
           </div>
           <span className="mt-2 font-light">{formatedDate}</span>
-          <a className="mt-2 mb-6 font-bold text-center cursor-pointer text-appBlue hover:underline">
+          <a className="mt-2 mb-6 font-bold text-center cursor-pointer text-appBlack hover:underline">
             {post?.node?.title}
           </a>
         </div>
@@ -49,7 +49,7 @@ const BlogItem = ({ post }: Props) => {
             onClick={() =>
               handleGoToPost(reemplazarEspaciosPorGuiones(post?.node?.title))
             }
-            className="px-10 py-4 text-white uppercase transition bg-appBlack hover:bg-appBlue"
+            className="px-10 py-4 font-semibold text-white uppercase transition bg-appBlack hover:bg-appBlue"
           >
             Read post
           </button>

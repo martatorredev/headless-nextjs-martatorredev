@@ -4,19 +4,21 @@ import { VISION_ICON } from "@/images";
 
 const VisionSection = () => {
   return (
-    <section className="flex items-center justify-center min-h-screen py-8">
+    <section className="flex items-center justify-center pt-12 pb-48">
       <div className="flex flex-col items-center px-8 ">
         <span className="block mb-4 text-2xl text-center text-appGreen">
           {TEXT1}
         </span>
-        <h2 className="text-4xl text-center text-white uppercase">{TITLE}</h2>
+        <h2 className="text-4xl font-semibold text-center text-white uppercase">
+          {TITLE}
+        </h2>
         <div className="w-full max-w-3xl">
           <div className="flex flex-col items-center p-4 xs:p-14">
-            <Image src={VISION_ICON} alt="vision" width={120} height={150} />
-            <h3 className="mt-12 text-xl text-center text-white uppercase xs:text-3xl">
+            <Image src={VISION_ICON} alt="vision" width={170} height={170} />
+            <h3 className="mt-12 text-xl font-semibold text-center text-white uppercase xs:text-3xl">
               {CARD_TITLE}
             </h3>
-            <p className="mt-4 text-sm text-center text-white xs:text-base">
+            <p className="mt-4 text-sm text-center text-white xs:text-lg">
               {CARD_DESCRIPTION}
             </p>
           </div>
@@ -42,7 +44,7 @@ const Old = () => {
               <h3 className="mt-12 text-xl text-center text-white uppercase xs:text-3xl">
                 {CARD_TITLE}
               </h3>
-              <p className="mt-4 text-sm text-center text-white xs:text-base">
+              <p className="mt-4 text-sm text-center text-white xs:text-lg">
                 {CARD_DESCRIPTION}
               </p>
             </div>

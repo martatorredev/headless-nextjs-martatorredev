@@ -25,12 +25,12 @@ const Header = () => {
 const Desktop = () => {
   return (
     <nav className="w-full max-w-5xl mx-auto">
-      <ul className="flex items-end justify-center gap-12">
+      <ul className="flex items-center justify-center gap-12">
         {navItemsDesktop.map(({ content, path, id }) => (
           <li key={id}>
             <a
               href={path}
-              className="mb-1 text-white uppercase cursor-pointer hover:text-appGreen hover:underline"
+              className="mb-1 font-semibold text-white uppercase cursor-pointer hover:text-appGreen hover:underline"
             >
               {content}
             </a>

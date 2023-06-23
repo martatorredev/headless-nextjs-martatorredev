@@ -14,7 +14,7 @@ const Footer = () => {
   const router = useRouter();
   return (
     <footer className="min-h-screen">
-      <div className="flex flex-col items-center px-8 pt-48 pb-12">
+      <div className="flex flex-col items-center px-8 pt-32 pb-12">
         <div className="flex flex-wrap justify-center w-full max-w-xl gap-12 mx-auto xs:justify-between">
           <div className="flex flex-col items-center gap-5">
             <a
@@ -96,7 +96,7 @@ const Footer = () => {
           <Image
             src="/assets/logo-footer.svg"
             alt="logo"
-            width={400}
+            width={310}
             height={60}
           />
           <p className="mt-8 text-center text-white">
@@ -123,10 +123,17 @@ const Footer = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
           <Image
+            onClick={() =>
+              window.open(
+                "https://martatorre.dev/wp-content/uploads/2023/01/sello-compensa.webp",
+                "_blank"
+              )
+            }
             src={SELLO_COMPENSA_IMAGE}
             alt="sello-compensa"
             width={150}
             height={150}
+            className="cursor-pointer"
           />
           <div>
             <Script
@@ -136,22 +143,26 @@ const Footer = () => {
             <div id="wcb" className="carbonbadge wcb-d"></div>
           </div>
           <Image
+            onClick={() =>
+              window.open("https://www.thegreenwebfoundation.org/", "_blank")
+            }
             src={GREENWEB_IMAGE}
             alt="green-web"
             width={300}
             height={150}
+            className="cursor-pointer"
           />
         </div>
         <div className="flex justify-center gap-4 mt-8">
           <a
             onClick={() => router.push("/privacy-policy")}
-            className="text-white underline cursor-pointer"
+            className="text-white underline cursor-pointer hover:text-appGreen"
           >
             Privacy Policy
           </a>
           <a
             onClick={() => router.push("/legal-notice")}
-            className="text-white underline cursor-pointer"
+            className="text-white underline cursor-pointer hover:text-appGreen"
           >
             Legal Notice
           </a>

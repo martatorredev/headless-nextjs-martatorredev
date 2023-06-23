@@ -5,7 +5,7 @@ const HomeSection = () => {
     <section className="pb-36">
       <Header />
 
-      <div className="max-w-5xl px-8 mx-auto mt-[10vh] lg:mt-[20vh]">
+      <div className="max-w-5xl px-8 mx-auto mt-[10vh] lg:mt-[15vh]">
         <h1 className="text-3xl text-center text-white uppercase md:text-5xl">
           Corporate social responsibility
         </h1>

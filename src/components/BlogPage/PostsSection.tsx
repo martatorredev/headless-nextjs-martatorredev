@@ -32,7 +32,7 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
   return (
     <section>
       <div className="background-home h-[550px] w-full" />
-      <div className="px-8 pb-24 mx-auto max-w-6xl relative -top-[10rem]">
+      <div className="px-8 mx-auto max-w-6xl relative -top-[10rem]">
         <div className="flex flex-wrap justify-between gap-4 mb-8">
           <div className="flex flex-col w-48 gap-2">
             <label className="text-white uppercase">Category</label>

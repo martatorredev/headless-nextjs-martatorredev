@@ -8,6 +8,7 @@ html {
 body {
   background-color: #011046;
   font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
 }
 h1,
 h2,
@@ -29,7 +30,7 @@ h5 {
       rgba(1, 16, 70, 0.25),
       rgba(1, 16, 70, 0.25)
     ),
-    url("https://en.martatorre.dev/wp-content/uploads/2023/03/martatorre-1024x1024.webp");
+    url("../../public/assets/mt-foto.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

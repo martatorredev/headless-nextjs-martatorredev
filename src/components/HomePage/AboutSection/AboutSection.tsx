@@ -30,22 +30,22 @@ export default function AboutSection() {
 
 const Desktop = () => {
   return (
-    <div className="relative -top-[7rem] max-w-6xl min-h-screen px-8 mx-auto">
+    <div className="relative -top-[7rem] max-w-6xl px-8 mx-auto">
       <div className="relative flex items-center ">
         <div className="absolute z-50">
           <div className="flex w-full">
             <div className="mb-16  w-full  flex items-center  text-left pr-5 justify-end max-w-[300px]">
-              <p className="text-right text-white">{ITEM1}</p>
+              <div className="text-right text-white">{ITEM1}</div>
             </div>
           </div>
           <div className="flex w-full">
             <div className="mb-16  w-full  flex items-center  text-left pr-5 justify-end max-w-[300px]">
-              <p className="text-right text-white">{ITEM2}</p>
+              <div className="text-right text-white">{ITEM2}</div>
             </div>
           </div>
           <div className="flex w-full">
             <div className="mb-16  w-full  flex items-center  text-left pr-5 justify-end max-w-[300px]">
-              <p className="text-right text-white">{ITEM3}</p>
+              <div className="text-right text-white">{ITEM3}</div>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Desktop = () => {
         <div className="absolute right-0 z-50">
           <div className="flex w-full">
             <div className="mb-16  w-full  flex items-center  text-left pl-5 justify-end max-w-[300px]">
-              <p className="text-white ">{ITEM4}</p>
+              <div className="text-white ">{ITEM4}</div>
             </div>
           </div>
           <div className="flex justify-end w-full">
@@ -68,14 +68,14 @@ const Desktop = () => {
           </div>
           <div className="flex w-full">
             <div className="mb-16  w-full  flex items-center  text-left pl-5 justify-end max-w-[300px]">
-              <p className="text-white ">{ITEM6}</p>
+              <div className="text-white ">{ITEM6}</div>
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-14">
-        <h2 className="text-4xl text-white uppercase">{TITLE}</h2>
-        <button className="px-8 py-4 text-lg font-bold uppercase mt-14 bg-appGreen hover:bg-appBlue hover:text-white">
+        <h2 className="text-4xl font-semibold text-white uppercase">{TITLE}</h2>
+        <button className="px-8 py-2 mt-12 text-lg font-bold uppercase bg-appGreen hover:bg-appBlue hover:text-white">
           {BUTTON_TEXT}
         </button>
       </div>
@@ -93,7 +93,7 @@ const Mobile = () => {
         />
       </div>
       <div className="flex flex-col items-center justify-center">
-        <h2 className="mt-5 mb-12 text-4xl text-center text-white uppercase">
+        <h2 className="mt-5 mb-12 text-4xl font-semibold text-center text-white uppercase">
           {TITLE}
         </h2>
         <div className="grid-cols-2 px-8 mb-12 text-white xs:grid">
