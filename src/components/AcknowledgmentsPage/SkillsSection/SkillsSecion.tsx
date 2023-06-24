@@ -2,31 +2,33 @@ import React from "react";
 
 const SkillsSecion = () => {
   return (
-    <section className="w-full max-w-5xl px-8 mx-auto pb-36">
-      <div className="flex flex-wrap justify-center gap-24">
+    <section className="w-full px-8 mx-auto max-w-7xl pb-36">
+      <div className="grid grid-cols-1 gap-24 lg:grid-cols-3">
         <div>
-          <h2 className="text-3xl text-center uppercase text-appSky">
+          <h2 className="text-3xl font-semibold text-center uppercase text-appSky">
             Image Bank
           </h2>
-          <ul className="mt-2 text-lg text-center text-white">
-            <li className="mt-2">Shutterstock</li>
+          <ul className="mt-2 text-2xl text-center text-white">
+            <li className="mt-4">Shutterstock</li>
             <li className="mt-2">Unsplash</li>
           </ul>
         </div>
         <div>
-          <h2 className="text-3xl text-center uppercase text-appSky">
+          <h2 className="text-3xl font-semibold text-center uppercase text-appSky">
             Web technology
           </h2>
-          <ul className="mt-2 text-lg text-center text-white">
-            <li className="mt-2">WordPress</li>
-            <li className="mt-2">Gravity Forms</li>
-            <li className="mt-2">Twenty Twenty-Three theme</li>
+          <ul className="mt-2 text-2xl text-center text-white">
+            <li className="mt-4">WordPress</li>
+            <li className="mt-4">NextJS</li>
+            <li className="mt-2">TailwindCSS</li>
           </ul>
         </div>
         <div>
-          <h2 className="text-3xl text-center uppercase text-appSky">Tools</h2>
-          <ul className="mt-2 text-lg text-center text-white">
-            <li className="mt-2">Cal</li>
+          <h2 className="text-3xl font-semibold text-center uppercase text-appSky">
+            Tools
+          </h2>
+          <ul className="mt-2 text-2xl text-center text-white">
+            <li className="mt-4">Cal</li>
             <li className="mt-2">KomodoDecks</li>
             <li className="mt-2">Sustainable hosting by ADW</li>
           </ul>

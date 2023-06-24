@@ -5,40 +5,29 @@ const PeopleSection = () => {
   return (
     <section>
       <div className="background-home h-[550px] w-full" />
-      <div className="flex flex-col items-center w-full max-w-4xl px-8  mx-auto relative -top-[10rem]">
+      <div className="flex flex-col items-center w-full max-w-4xl px-8  mx-auto relative -top-[8rem]">
         <Image
           src="/assets/heart-card.svg"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           alt="people"
         />
-        <h2 className="mt-4 text-3xl text-center uppercase text-appSky">
+        <h2 className="mt-4 text-3xl font-semibold text-center uppercase text-appSky">
           Super skilled professionals
         </h2>
         <div className="text-center">
-            <p className="mt-4 text-xl text-white">
-            Branding:
+          <p className="mt-4 text-2xl text-white">
+            SEO:
             <a
-              href="https://lllu.es/"
+              href="https://seomsaez.es/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
             >
-              Patricia Rueda
+              María Sáez
             </a>
           </p>
-          <p className="mt-4 text-xl text-white">
-            UX/UI Design:
-            <a
-              href="https://en.noraferreiros.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
-            >
-              Nora Ferreirós
-            </a>
-          </p>
-          <p className="mt-4 text-xl text-white">
+          <p className="mt-4 text-2xl text-white">
             Copywriting:
             <a
               href="https://celigaroe.com/"
@@ -49,28 +38,105 @@ const PeopleSection = () => {
               Celi Garoe
             </a>
           </p>
-          <p className="mt-4 text-xl text-white">
-            SEO:
+          <p className="mt-4 text-2xl text-white">
+            UX/UI Design:
             <a
-              href="https://seomsaez.es/"
+              href="https://en.noraferreiros.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
             >
-              María Saez
+              Nora Ferreirós
             </a>
           </p>
-          <p className="mt-4 text-xl text-white">
-            Photography:
+          <p className="mt-4 text-2xl text-white">
+            Branding:
             <a
-              href="#"
+              href="https://lllu.es/"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-1 mr-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+              className="ml-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
             >
-              Eva Jimenez
+              Patricia Rueda
             </a>
           </p>
+          <div className="flex flex-wrap justify-center mt-4 text-2xl text-white">
+            Brand Adaptation:
+            <div className="flex flex-wrap justify-center">
+              <a
+                href="https://elenatitos.com/es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 mr-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+              >
+                Elena Titos
+              </a>
+              <span>and</span>
+              <a
+                href="https://treintametros.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 mr-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+              >
+                Virginia Oliete
+              </a>
+            </div>
+          </div>
+
+          <p className="mt-4 text-2xl text-white">
+            Translation:
+            <a
+              href="https://www.smithdelafuente.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+            >
+              Carolina Smith
+            </a>
+          </p>
+
+          <div className="flex flex-wrap justify-center mt-4 text-2xl text-white">
+            Photography:
+            <div className="flex flex-wrap justify-center">
+              <a
+                href="https://www.flickr.com/photos/weikoatwordcamps/albums"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 mr-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+              >
+                Weiko
+              </a>
+              <a
+                href="https://nilovelez.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 mr-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+              >
+                Nilo Vélez
+              </a>
+              <span>and</span>
+              <a
+                href="https://farutxo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 mr-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+              >
+                Farutxo
+              </a>
+            </div>
+          </div>
+          <p className="mt-4 text-2xl text-white">
+            Legal Texts:
+            <a
+              href="https://anagavilan.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 underline cursor-pointer hover:no-underline hover:text-appGreen"
+            >
+              Ana Gavilán
+            </a>
+          </p>
+          <p className="mt-4 text-2xl text-white">Development: Me 😎</p>
         </div>
       </div>
     </section>

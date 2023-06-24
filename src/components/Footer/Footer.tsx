@@ -13,8 +13,8 @@ import {
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer className="min-h-screen">
-      <div className="flex flex-col items-center px-8 pt-32 pb-12">
+    <footer className="pb-12">
+      <div className="flex flex-col items-center px-8 pt-32 pb-8">
         <div className="flex flex-wrap justify-center w-full max-w-xl gap-12 mx-auto xs:justify-between">
           <div className="flex flex-col items-center gap-5">
             <a
@@ -117,7 +117,7 @@ const Footer = () => {
               Acknowledgments
             </a>
           </p>
-          <p className="mt-4 text-center text-white ">
+          <p className="mt-4 font-semibold text-center text-white">
             Code is Poetry ❤️ by WordPress
           </p>
         </div>
@@ -153,7 +153,7 @@ const Footer = () => {
             className="cursor-pointer"
           />
         </div>
-        <div className="flex justify-center gap-4 mt-8">
+        <div className="flex justify-center gap-16 mt-8 uppercase">
           <a
             onClick={() => router.push("/privacy-policy")}
             className="text-white underline cursor-pointer hover:text-appGreen"

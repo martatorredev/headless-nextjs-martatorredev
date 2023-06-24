@@ -10,9 +10,9 @@ export const servicesItems = [
     iconPath: DESARROLLO_MEDIDA_ICON,
     title: "Custom Development",
     description: [
-      "Creation of web pages, apps, directories, online stores, à la carte plugins or any other digital tool that strikes your fancy.",
-      "Here the important thing is that the result adapts to your needs and is capable of growing at your pace and that of your business.",
-      "Definitely? Finding a technology that never slows you down.",
+      "Creation of websites, apps, directories, online shops, customised plugins or any other digital tool that takes your fancy.",
+      "The important thing here is that the result adapts to your needs and is able to grow at your pace and that of your business.",
+      "The bottom line? To find a technology that never holds you back.",
     ],
     cta: "Get custom development",
   },
