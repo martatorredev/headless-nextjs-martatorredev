@@ -6,10 +6,10 @@ const HomeSection = () => {
     <section>
       <Header />
       <div className="max-w-5xl px-8 mx-auto mt-[10vh] lg:mt-[15vh]">
-        <h1 className="text-4xl font-semibold text-center text-white uppercase md:text-6xl">
+        <h1 className="text-[2.5rem] font-bold text-center text-white uppercase ">
           {TITLE}
         </h1>
-        <p className="mt-6 text-2xl text-center sm:text-3xl text-appGreen md:text-4xl">
+        <p className="mt-6 text-center sm:text-3xl text-appGreen text-[2rem]">
           {SUBTITLE}
         </p>
         <p className="mt-6 text-lg text-center text-white sm:text-xl md:text-2xl">

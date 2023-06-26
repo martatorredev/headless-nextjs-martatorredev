@@ -14,7 +14,7 @@ const navItemsDesktop = [
   },
   {
     id: 3,
-    content: <Image src={LOGO_ICON} alt="Logo" width={65} height={65} />,
+    content: <Image src={LOGO_ICON} alt="Logo" width={75} height={75} />,
     path: "/",
   },
   {

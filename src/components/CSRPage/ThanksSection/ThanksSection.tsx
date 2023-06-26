@@ -12,8 +12,8 @@ const ThanksSection = () => {
               <Image
                 src="/assets/heart.svg"
                 alt="thanks"
-                width={200}
-                height={200}
+                width={165}
+                height={165}
               />
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="mt-4 text-center text-white">

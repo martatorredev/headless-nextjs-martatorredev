@@ -8,7 +8,7 @@ html {
 body {
   background-color: #011046;
   font-family: "Red Hat Display", sans-serif;
-  font-size: 18px;
+  font-size: 1.1875rem;
 }
 h1,
 h2,
@@ -22,7 +22,7 @@ h5 {
   /* background-image: url("https://en.martatorre.dev/wp-content/uploads/2023/03/background.webp"); */
   background-image: url("../../public/assets/home-bg.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .background-marta {
   background: linear-gradient(

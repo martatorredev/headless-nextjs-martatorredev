@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["en.martatorre.dev", "api.thegreenwebfoundation.org"],
+    unoptimized: true,
   },
 };
 

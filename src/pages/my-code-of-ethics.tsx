@@ -3,7 +3,7 @@ import { client } from "@/graphql/apollo-client";
 import { GET_MY_CODE_OF_ETHICS } from "@/graphql/queries";
 import { PagesAPIResponse } from "@/interfaces/PagesApi.interface";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await client.query<PagesAPIResponse>({
     query: GET_MY_CODE_OF_ETHICS,
   });

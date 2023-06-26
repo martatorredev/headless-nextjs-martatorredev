@@ -15,13 +15,13 @@ const CollaboratorsSection = () => {
   return (
     <section className="w-full max-w-6xl px-8 pb-4 mx-auto">
       <div className="flex flex-col items-center">
-        <p className="max-w-md mt-8 text-2xl text-center text-appGreen">
+        <p className="max-w-md mt-[200px] text-2xl text-center text-appGreen">
           These are some of the organizations I am currently collaborating with
         </p>
-        <h2 className="mt-24 text-3xl font-bold text-center text-white uppercase">
+        <h2 className="mt-24 text-[2rem] font-bold text-center text-white uppercase">
           Free support for development, website maintenance, and consulting
         </h2>
-        <div className="flex flex-wrap justify-center gap-8 mt-8">
+        <div className="grid grid-cols-1 gap-16 md:gap-0 md:grid-cols-4 max-w-5xl w-full place-items-center mt-[40px]">
           <Image
             src={CANTABRIA_CONBICI_IMAGE}
             alt="cantabria"
@@ -43,10 +43,10 @@ const CollaboratorsSection = () => {
             height={100}
           />
         </div>
-        <h2 className="mt-24 text-3xl font-bold text-center text-white uppercase">
+        <h2 className="mt-24 text-[2rem] font-bold text-center text-white uppercase">
           Financial contribution and volunteering
         </h2>
-        <div className="flex flex-wrap justify-center max-w-3xl gap-8 mt-8">
+        <div className="grid grid-cols-1 gap-16 md:gap-0 md:grid-cols-4 max-w-5xl w-full place-items-center mt-[40px]">
           <Image src={CRUZ_ROJA_IMAGE} alt="cruzroja" width={150} height={90} />
           <Image src={MEDECINS_IMAGE} alt="medecins" width={150} height={70} />
           <Image src={INTERMON_IMAGE} alt="intermon" width={190} height={60} />

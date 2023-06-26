@@ -8,11 +8,11 @@ const PeopleSection = () => {
       <div className="flex flex-col items-center w-full max-w-4xl px-8  mx-auto relative -top-[8rem]">
         <Image
           src="/assets/heart-card.svg"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           alt="people"
         />
-        <h2 className="mt-4 text-3xl font-semibold text-center uppercase text-appSky">
+        <h2 className="mt-4 text-[1.625rem] font-bold text-center uppercase text-appSky">
           Super skilled professionals
         </h2>
         <div className="text-center">
@@ -106,6 +106,7 @@ const PeopleSection = () => {
               >
                 Weiko
               </a>
+              <span>,</span>
               <a
                 href="https://nilovelez.com/"
                 target="_blank"

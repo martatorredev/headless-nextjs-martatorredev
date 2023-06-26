@@ -24,13 +24,11 @@ const ContactSectionNew = () => {
             suits your project.
           </p>
           <a
-            href="https://cal.com/martatorredev/free-consulting"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:hey@martatorre.dev"
             className="px-12 py-4 mt-6 transition bg-appGreen hover:bg-appBlue hover:text-white"
           >
             <h3 className="text-xl font-bold uppercase sm:text-2xl">
-              Book a free session
+              Let’s talk!
             </h3>
           </a>
         </div>

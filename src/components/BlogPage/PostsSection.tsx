@@ -47,14 +47,16 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
 
   return (
     <section>
-      <div className="background-home h-[550px] w-full" />
+      <div className="background-home h-[550px] w-full mt-[66px]" />
       <div className="px-8 mx-auto max-w-6xl relative -top-[10rem]">
-        <div className="flex flex-wrap justify-between gap-4 mb-8">
+        <div className="flex flex-wrap justify-between gap-4 mb-[40px]">
           <div className="flex flex-wrap gap-4">
-            <div className="flex flex-col w-48 gap-2" id="blogs">
-              <label className="text-white uppercase">Category</label>
+            <div className="flex flex-col w-[267px] gap-2" id="blogs">
+              <label className="text-white uppercase text-[0.875rem]">
+                Category
+              </label>
               <select
-                className="px-2 py-3 text-base border outline-none border-appGreen text-appBlack"
+                className="px-2 py-3  border outline-none border-appGreen text-appBlack font-[500] text-[1rem]"
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 value={selectedCategory}
               >
@@ -66,10 +68,12 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
                 ))}
               </select>
             </div>
-            <div className="flex flex-col w-48 gap-2">
-              <label className="text-white uppercase">Order by:</label>
+            <div className="flex flex-col w-[267px] gap-2">
+              <label className="text-white uppercase  text-[0.875rem]">
+                Order by:
+              </label>
               <select
-                className="px-2 py-3 text-base border outline-none border-appGreen text-appBlack"
+                className="px-2 py-3 text-base border outline-none border-appGreen text-appBlack font-[500] text-[1rem]"
                 onChange={(e) => setOrder(e.target.value as any)}
                 value={order}
               >
@@ -82,10 +86,12 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
             </div>
           </div>
           <div className="flex flex-col gap-2 w-80">
-            <label className="text-white uppercase ">Search</label>
-            <div className="flex justify-between w-full px-2 py-3 text-base bg-white border border-appGreen">
+            <label className="text-white uppercase text-[0.875rem]">
+              Search
+            </label>
+            <div className="flex justify-between w-full px-4 py-3 text-base bg-white border border-appGreen">
               <input
-                className="w-full h-full outline-none text-appBlack"
+                className="w-full h-full outline-none text-appBlack  text-[1rem]"
                 onChange={(e) => setSearchTerm(e.target.value)}
                 value={searchTerm}
                 placeholder="Search posts"
@@ -117,54 +123,56 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
             <BlogItem key={idx} post={post} />
           ))}
         </div>
-        <div className="flex justify-center gap-4 mt-8">
-          <PageItem
-            onClick={prevPage}
-            num={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            }
-          />
-          {Array.from(Array(totalPages).keys()).map((page) => (
+        {filteredPosts && filteredPosts?.length > 9 && (
+          <div className="flex justify-center gap-4 mt-8">
             <PageItem
-              key={page}
-              num={page + 1}
-              onClick={() => goToPage(page + 1)}
-              currentPage={currentPage}
+              onClick={prevPage}
+              num={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5"
+                  />
+                </svg>
+              }
             />
-          ))}
-          <PageItem
-            onClick={nextPage}
-            num={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            }
-          />
-        </div>
+            {Array.from(Array(totalPages).keys()).map((page) => (
+              <PageItem
+                key={page}
+                num={page + 1}
+                onClick={() => goToPage(page + 1)}
+                currentPage={currentPage}
+              />
+            ))}
+            <PageItem
+              onClick={nextPage}
+              num={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              }
+            />
+          </div>
+        )}
       </div>
     </section>
   );

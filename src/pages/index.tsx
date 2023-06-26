@@ -11,7 +11,7 @@ import ServicesSection from "@/components/HomePage/ServicesSection/ServicesSecti
 import VisionSection from "@/components/HomePage/VisionSection/VisionSection";
 import ContactSectionNew from "@/components/HomePage/ContactSection/ContactSectionNew";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await client.query<LatestsPostsAPIResponse>({
     query: GET_LATEST_POSTS,
   });

@@ -21,14 +21,14 @@ const Page = () => {
       <Header />
       <div className="px-8 mt-16">
         <div className="flex items-center justify-center w-full max-w-6xl pt-16 pb-24 mx-auto">
-          <h1 className="max-w-3xl text-4xl text-center uppercase text-appRed sm:text-5xl">
+          <h1 className="max-w-3xl text-4xl font-bold text-center uppercase text-appRed sm:text-5xl">
             Looks like this isn't the page you're looking for...
           </h1>
         </div>
       </div>
       <section>
         <div className="background-home h-[550px] w-full" />
-        <div className="flex flex-col items-center max-w-3xl px-8 mx-auto text-lg text-center text-white relative -top-[12rem]">
+        <div className="flex flex-col items-center max-w-3xl px-8 mx-auto text-[1.5rem] text-center text-white relative -top-[12rem]">
           <p className="mt-2">
             Alright, fair enough. I’m pretty sure this isn’t what you were
             expecting, unless you’re a bit of a troll and intentionally seeking
@@ -42,46 +42,45 @@ const Page = () => {
           </p>
         </div>
       </section>
-      <div className="grid max-w-5xl grid-cols-1 gap-8 px-8 mx-auto mt-12 lg:grid-cols-3 justify-items-center">
+      <div className="grid max-w-5xl grid-cols-1 gap-8 px-8 mx-auto lg:grid-cols-3 justify-items-center">
         <div className="w-[250px] flex flex-col items-center">
           <Image src={GO_EXIT_ICON} alt="go exit" width={80} height={80} />
-          <p className="my-4 text-xl text-center text-white uppercase">
+          <p className="my-4 text-center text-white uppercase text-[1.125rem] font-bold">
             Go back to square one
           </p>
           <button
             onClick={handleGoHome}
-            className="px-8 py-3 font-semibold uppercase transition bg-appGreen hover:bg-appBlue hover:text-white"
+            className="px-8 py-3 font-bold text-[18px] uppercase transition bg-appGreen hover:bg-appBlue hover:text-white"
           >
             Go to homepage
           </button>
         </div>
         <div className="w-[250px] flex flex-col items-center">
           <Image src={BLOG_ICON} alt="go exit" width={80} height={80} />
-          <p className="my-4 text-xl text-center text-white uppercase">
+          <p className="my-4 text-[1.125rem] font-bold text-center text-white uppercase">
             Check out the latest posts
           </p>
           <button
             onClick={handleGoBlog}
-            className="px-8 py-3 font-semibold uppercase transition bg-appGreen hover:bg-appBlue hover:text-white"
+            className="px-8 py-3 font-bold text-[18px] uppercase transition bg-appGreen hover:bg-appBlue hover:text-white"
           >
             Go to blog
           </button>
         </div>
         <div className="w-[250px] flex flex-col items-center">
           <Image src={COMMENT_ICON} alt="go exit" width={80} height={80} />
-          <p className="my-4 text-xl text-center text-white uppercase">
+          <p className="my-4 text-[1.125rem] font-bold text-center text-white uppercase">
             Complain bitterly, it’s your right
           </p>
           <button
             onClick={handleGoContact}
-            className="px-8 py-3 font-semibold uppercase transition bg-appGreen hover:bg-appBlue hover:text-white"
+            className="px-8 py-3 font-bold text-[18px] uppercase transition bg-appGreen hover:bg-appBlue hover:text-white"
           >
             Go to contact
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center max-w-5xl px-8 pb-24 mx-auto">
-        <div className="w-[2px] h-24 bg-appBlue my-14" />
+      <div className="flex flex-col items-center justify-center max-w-5xl px-8 pb-24 mx-auto mt-16 text-[1.5rem] font-[500]">
         <p className="text-white">Alright, do we have a deal?</p>
         <p className="mt-4 text-white">...</p>
         <p className="mt-4 italic text-white">Crickets chirping</p>

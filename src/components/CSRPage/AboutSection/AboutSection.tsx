@@ -18,7 +18,7 @@ const AboutSection = () => {
                 key={index}
                 className={classNames(
                   index === paragraphs.length - 1
-                    ? "text-appSky text-xl"
+                    ? "text-appSky text-[1.5rem] font-[500]"
                     : "text-white"
                 )}
               >

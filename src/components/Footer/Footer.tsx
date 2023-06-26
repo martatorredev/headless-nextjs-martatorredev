@@ -1,7 +1,6 @@
-import { GREENWEB_IMAGE, LOGO_ICON, SELLO_COMPENSA_IMAGE } from "@/images";
+import { GREENWEB_IMAGE, SELLO_COMPENSA_IMAGE } from "@/images";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Script from "next/script";
 import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 import {
   FaLinkedin,
@@ -9,9 +8,11 @@ import {
   FaTwitter,
   FaWordpressSimple,
 } from "react-icons/fa";
+import Carbonbadge from "../CarbonBadge";
 
 const Footer = () => {
   const router = useRouter();
+
   return (
     <footer className="pb-12">
       <div className="flex flex-col items-center px-8 pt-32 pb-8">
@@ -27,7 +28,7 @@ const Footer = () => {
               onClick={() => router.push("/corporate-social-responsibility")}
               className="text-white underline transition cursor-pointer hover:text-appGreen"
             >
-              Corporate Social Responsibility.
+              Corporate Social Responsibility
             </a>
             <a
               href="https://martatorre.dev/"
@@ -136,11 +137,7 @@ const Footer = () => {
             className="cursor-pointer"
           />
           <div>
-            <Script
-              src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
-              defer
-            />
-            <div id="wcb" className="carbonbadge wcb-d"></div>
+            <Carbonbadge />
           </div>
           <Image
             onClick={() =>
@@ -153,7 +150,7 @@ const Footer = () => {
             className="cursor-pointer"
           />
         </div>
-        <div className="flex justify-center gap-16 mt-8 uppercase">
+        <div className="flex justify-center gap-16 mt-8 uppercase text-[0.875rem]">
           <a
             onClick={() => router.push("/privacy-policy")}
             className="text-white underline cursor-pointer hover:text-appGreen"

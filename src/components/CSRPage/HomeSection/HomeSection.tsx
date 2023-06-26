@@ -6,10 +6,10 @@ const HomeSection = () => {
       <Header />
 
       <div className="max-w-5xl px-8 mx-auto mt-[10vh] lg:mt-[15vh]">
-        <h1 className="text-3xl text-center text-white uppercase md:text-5xl">
+        <h1 className="text-center text-white uppercase text-[2.5rem] font-bold">
           Corporate social responsibility
         </h1>
-        <p className="mt-6 text-2xl text-center sm:text-3xl text-appGreen md:text-4xl">
+        <p className="mt-6 text-center sm:text-3xl text-appGreen text-[2rem]">
           Not all grains are made of sand.
         </p>
       </div>
