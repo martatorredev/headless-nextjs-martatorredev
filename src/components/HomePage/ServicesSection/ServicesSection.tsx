@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { servicesItems } from "./constants";
+import { useRouter } from "next/router";
 
 const ServicesSection = () => {
+  const router = useRouter();
   return (
     <section className="w-full max-w-6xl px-8 pt-24 pb-24 mx-auto text-center">
       <div className="flex flex-wrap justify-center gap-32" id="services">
@@ -22,7 +24,10 @@ const ServicesSection = () => {
                 </p>
               ))}
             </div>
-            <a className="px-2 underline cursor-pointer text-appGreen hover:bg-appGreen hover:text-black">
+            <a
+              onClick={() => router.push("#contact")}
+              className="px-2 underline cursor-pointer text-appGreen hover:bg-appGreen hover:text-black"
+            >
               {cta}
             </a>
           </div>

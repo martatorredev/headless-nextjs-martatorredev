@@ -5,7 +5,7 @@ const nextConfig = {
     domains: ["en.martatorre.dev", "api.thegreenwebfoundation.org"],
     unoptimized: true,
   },
-  basePath: "/headless",
+  // basePath: "/",
 };
 
 module.exports = nextConfig;

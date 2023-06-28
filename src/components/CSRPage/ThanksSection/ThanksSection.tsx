@@ -15,7 +15,7 @@ const ThanksSection = () => {
           <div className="w-full max-w-3xl">
             <div className="flex flex-col items-center p-4 xs:p-14">
               <Image
-                src="/headless/assets/heart.svg"
+                src="/assets/heart.svg"
                 alt="thanks"
                 width={isMedium ? 165 : 141}
                 height={isMedium ? 165 : 141}

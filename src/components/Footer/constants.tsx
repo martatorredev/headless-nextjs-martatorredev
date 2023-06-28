@@ -26,11 +26,11 @@ const ITEM5 = (
   <div>
     <strong className="mr-1">Co-founder</strong>of
     <a
-      href="https://wpfem.org"
+      href="https:///assets.org"
       target="_blank"
       className="ml-2 underline cursor-pointer text-appGreen hover:bg-appGreen hover:text-black"
     >
-      WPFem
+      /assets
     </a>
     , a platform that promotes female participation in WordPress events.
   </div>

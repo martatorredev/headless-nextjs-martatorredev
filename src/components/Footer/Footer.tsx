@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center mt-16">
           <Image
-            src="/headless/assets/logo-footer.svg"
+            src="/assets/logo-footer.svg"
             alt="logo"
             width={310}
             height={60}

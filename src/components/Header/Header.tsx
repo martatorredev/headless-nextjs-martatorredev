@@ -56,7 +56,7 @@ const Mobile = () => {
     <nav className="relative px-8">
       <div className="flex justify-between">
         <Image
-          src={"/headless/assets/menu-mobile.svg"}
+          src={"/assets/menu-mobile.svg"}
           alt="Logo"
           width={isSmall ? 32 : 50}
           height={isSmall ? 32 : 50}

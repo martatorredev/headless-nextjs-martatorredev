@@ -12,7 +12,7 @@ const NewsletterSection = () => {
     <section className="w-full max-w-6xl px-8 pb-24 mx-auto">
       <div className="flex flex-col items-center justify-center">
         <Image
-          src="/headless/assets/sword.svg"
+          src="/assets/sword.svg"
           alt="sword"
           width={isMedium ? 165 : 105}
           height={isMedium ? 165 : 105}
