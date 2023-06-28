@@ -10,7 +10,7 @@ const ContactSectionNew = () => {
           className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto text-center "
         >
           <Image
-            src="/assets/logo-nombre.svg"
+            src="/headless/assets/logo-nombre.svg"
             alt="logo"
             width={370}
             height={200}

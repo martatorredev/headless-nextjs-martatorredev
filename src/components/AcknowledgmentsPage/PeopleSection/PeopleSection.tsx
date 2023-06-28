@@ -7,7 +7,7 @@ const PeopleSection = () => {
       <div className="background-home h-[550px] w-full" />
       <div className="flex flex-col items-center w-full max-w-4xl px-8  mx-auto relative -top-[8rem]">
         <Image
-          src="/assets/heart-card.svg"
+          src="/headless/assets/heart-card.svg"
           width={80}
           height={80}
           alt="people"
