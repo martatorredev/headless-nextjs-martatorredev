@@ -4,7 +4,7 @@ import { servicesItems } from "./constants";
 
 const ServicesSection = () => {
   return (
-    <section className="w-full max-w-6xl pt-24 pb-24 mx-auto">
+    <section className="w-full max-w-6xl px-8 pt-24 pb-24 mx-auto text-center">
       <div className="flex flex-wrap justify-center gap-32" id="services">
         {servicesItems.map(({ title, description, iconPath, cta }) => (
           <div
@@ -12,7 +12,7 @@ const ServicesSection = () => {
             className="flex flex-col items-center  max-w-[410px] w-full"
           >
             <Image src={iconPath} alt={title} width={120} height={120} />
-            <h3 className="mt-8 text-3xl font-bold text-white uppercase">
+            <h3 className="mt-8 text-[1.875rem] font-bold text-white uppercase">
               {title}
             </h3>
             <div className="mt-4 text-center">

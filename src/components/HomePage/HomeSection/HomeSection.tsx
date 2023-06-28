@@ -12,9 +12,7 @@ const HomeSection = () => {
         <p className="mt-6 text-center sm:text-3xl text-appGreen text-[2rem]">
           {SUBTITLE}
         </p>
-        <p className="mt-6 text-lg text-center text-white sm:text-xl md:text-2xl">
-          {DESCRIPTION}
-        </p>
+        <p className="mt-6 text-center text-white">{DESCRIPTION}</p>
       </div>
     </section>
   );

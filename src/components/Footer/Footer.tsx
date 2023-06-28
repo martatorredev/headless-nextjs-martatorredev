@@ -8,7 +8,7 @@ import {
   FaTwitter,
   FaWordpressSimple,
 } from "react-icons/fa";
-import Carbonbadge from "../CarbonBadge";
+import Script from "next/script";
 
 const Footer = () => {
   const router = useRouter();
@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className="pb-12">
       <div className="flex flex-col items-center px-8 pt-32 pb-8">
-        <div className="flex flex-wrap justify-center w-full max-w-xl gap-12 mx-auto xs:justify-between">
+        <div className="flex flex-wrap justify-center w-full max-w-xl gap-12 mx-auto sm:justify-between">
           <div className="flex flex-col items-center gap-5">
             <a
               onClick={() => router.push("/blog")}
@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
             <a
               onClick={() => router.push("/corporate-social-responsibility")}
-              className="text-white underline transition cursor-pointer hover:text-appGreen"
+              className="text-center text-white underline transition cursor-pointer hover:text-appGreen"
             >
               Corporate Social Responsibility
             </a>
@@ -137,7 +137,11 @@ const Footer = () => {
             className="cursor-pointer"
           />
           <div>
-            <Carbonbadge />
+            <Script
+              src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+              defer
+            />
+            <div id="wcb" className="carbonbadge wcb-d"></div>
           </div>
           <Image
             onClick={() =>
@@ -150,7 +154,7 @@ const Footer = () => {
             className="cursor-pointer"
           />
         </div>
-        <div className="flex justify-center gap-16 mt-8 uppercase text-[0.875rem]">
+        <div className="flex justify-center flex-wrap gap-8 sm:gap-16 mt-8 uppercase text-[0.875rem]">
           <a
             onClick={() => router.push("/privacy-policy")}
             className="text-white underline cursor-pointer hover:text-appGreen"

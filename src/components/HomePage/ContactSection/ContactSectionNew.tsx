@@ -16,10 +16,10 @@ const ContactSectionNew = () => {
             height={200}
           />
 
-          <h2 className="mt-16 text-4xl font-semibold text-white uppercase">
+          <h2 className="mt-16 text-[1.875rem] font-semibold text-white uppercase">
             What are you waiting for to launch the development of your website?
           </h2>
-          <p className="mt-4 text-xl text-white">
+          <p className="mt-4 text-2xl text-white">
             Tell me what’s on your mind. I help you find the solution that best
             suits your project.
           </p>
@@ -27,7 +27,7 @@ const ContactSectionNew = () => {
             href="mailto:hey@martatorre.dev"
             className="px-12 py-4 mt-6 transition bg-appGreen hover:bg-appBlue hover:text-white"
           >
-            <h3 className="text-xl font-bold uppercase sm:text-2xl">
+            <h3 className="text-2xl font-bold uppercase sm:text-2xl">
               Let’s talk!
             </h3>
           </a>

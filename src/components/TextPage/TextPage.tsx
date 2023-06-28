@@ -10,10 +10,10 @@ const TextPage = ({ html, title }: Props) => {
     <section>
       <div className="min-h-[40vh]">
         <Header />
-        <h2 className="mt-[10vh] uppercase text-5xl text-center text-white pb-24">
+        <h2 className="mt-[10vh] uppercase text-[2.5rem] font-bold px-8 text-center text-white pb-24">
           {title}
         </h2>
-        <div className="background-home h-[290px] w-full" />
+        <div className="background-home2 h-[300px] w-full" />
       </div>
       <div className="py-24 bg-white">
         <section className="w-full max-w-4xl px-8 mx-auto">

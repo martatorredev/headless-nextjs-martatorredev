@@ -24,6 +24,22 @@ h5 {
   background-position: center;
   background-size: contain;
 }
+.background-home2 {
+  /* background-image: url("https://en.martatorre.dev/wp-content/uploads/2023/03/background.webp"); */
+  background-image: url("../../public/assets/home-bg2.png");
+  background-position: center;
+  background-size: contain;
+}
+@media (max-width: 1080px) {
+  .background-home {
+    background-size: cover;
+  }
+}
+@media (max-width: 1540px) {
+  .background-home2 {
+    background-size: cover;
+  }
+}
 .background-marta {
   background: linear-gradient(
       0deg,
@@ -59,7 +75,9 @@ h5 {
   border-image-slice: 1;
   padding: 10px;
 }
-
+.wp-page-content {
+  word-wrap: break-word;
+}
 .wp-page-content ul {
   list-style-type: disc;
 }

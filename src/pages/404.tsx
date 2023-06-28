@@ -42,7 +42,7 @@ const Page = () => {
           </p>
         </div>
       </section>
-      <div className="grid max-w-5xl grid-cols-1 gap-8 px-8 mx-auto lg:grid-cols-3 justify-items-center">
+      <div className="grid max-w-5xl grid-cols-1 gap-16 px-8 mx-auto lg:grid-cols-3 justify-items-center">
         <div className="w-[250px] flex flex-col items-center">
           <Image src={GO_EXIT_ICON} alt="go exit" width={80} height={80} />
           <p className="my-4 text-center text-white uppercase text-[1.125rem] font-bold">
@@ -80,7 +80,7 @@ const Page = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center max-w-5xl px-8 pb-24 mx-auto mt-16 text-[1.5rem] font-[500]">
+      <div className="flex flex-col text-center items-center justify-center max-w-5xl px-8 pb-24 mx-auto mt-16 text-[1.5rem] font-[500]">
         <p className="text-white">Alright, do we have a deal?</p>
         <p className="mt-4 text-white">...</p>
         <p className="mt-4 italic text-white">Crickets chirping</p>

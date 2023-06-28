@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { LAST_PARAGRAPH, paragraphs } from "./constants";
-import { THANKS_ICON } from "@/images";
+import { useMediaQuery } from "react-responsive";
+import useMounted from "@/hooks/useMounted";
 
 const ThanksSection = () => {
+  const isMedium = useMediaQuery({ query: "(min-width: 768px)" });
+  const mounted = useMounted();
+
+  if (!mounted) return null;
   return (
     <section className="flex items-center justify-center pt-12 pb-24">
       <div className="flex flex-col items-center px-8 ">
@@ -12,8 +17,8 @@ const ThanksSection = () => {
               <Image
                 src="/assets/heart.svg"
                 alt="thanks"
-                width={165}
-                height={165}
+                width={isMedium ? 165 : 141}
+                height={isMedium ? 165 : 141}
               />
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="mt-4 text-center text-white">

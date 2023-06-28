@@ -49,9 +49,9 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
     <section>
       <div className="background-home h-[550px] w-full mt-[66px]" />
       <div className="px-8 mx-auto max-w-6xl relative -top-[10rem]">
-        <div className="flex flex-wrap justify-between gap-4 mb-[40px]">
-          <div className="flex flex-wrap gap-4">
-            <div className="flex flex-col w-[267px] gap-2" id="blogs">
+        <div className="flex  flex-wrap-reverse justify-between gap-4 mb-[40px]">
+          <div className="grid w-full grid-cols-1 gap-4 lg:w-auto xs:grid-cols-2">
+            <div className="flex flex-col w-full lg:w-[267px] gap-2" id="blogs">
               <label className="text-white uppercase text-[0.875rem]">
                 Category
               </label>
@@ -68,7 +68,7 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
                 ))}
               </select>
             </div>
-            <div className="flex flex-col w-[267px] gap-2">
+            <div className="flex flex-col w-full lg:w-[267px] gap-2">
               <label className="text-white uppercase  text-[0.875rem]">
                 Order by:
               </label>
@@ -85,7 +85,7 @@ const PostsSection = ({ postsData, categoriesData }: Props) => {
               </select>
             </div>
           </div>
-          <div className="flex flex-col gap-2 w-80">
+          <div className="flex flex-col w-full gap-2 lg:w-80">
             <label className="text-white uppercase text-[0.875rem]">
               Search
             </label>

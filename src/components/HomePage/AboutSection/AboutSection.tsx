@@ -85,7 +85,7 @@ const Desktop = () => {
 
 const Mobile = () => {
   return (
-    <div className="relative -top-[10rem]">
+    <div className="relative -top-[8rem]">
       <div className="flex items-center justify-center max-w-6xl px-8 mx-auto ">
         <div
           id="about"
@@ -96,16 +96,16 @@ const Mobile = () => {
         <h2 className="mt-5 mb-12 text-4xl font-semibold text-center text-white uppercase">
           {TITLE}
         </h2>
-        <div className="grid-cols-2 px-8 mb-12 text-white xs:grid">
-          <p className="border-appBlue mb-12 xs:mb-0 pr-5 text-right min-h-[130px] flex items-center">
+        <div className="grid-cols-2 px-8 mb-6 text-white xs:grid">
+          <p className="border-appBlue mb-6 xs:mb-0 pr-5 text-right min-h-[130px] flex items-center">
             {ITEM1}
           </p>
           <p className="border-appBlue  pl-5 text-left min-h-[130px] flex items-center">
             {ITEM4}
           </p>
         </div>
-        <div className="grid-cols-2 px-8 mb-12 text-white xs:grid">
-          <p className="border-appBlue mb-12 xs:mb-0 pr-5 text-right min-h-[130px] flex items-center">
+        <div className="grid-cols-2 px-8 mb-6 text-white xs:grid">
+          <p className="border-appBlue mb-6 xs:mb-0 pr-5 text-right min-h-[130px] flex items-center">
             {ITEM2}
           </p>
           <div className="border-appBlue  pl-5 text-left min-h-[130px] flex items-center flex-wrap">
@@ -113,7 +113,7 @@ const Mobile = () => {
           </div>
         </div>
         <div className="grid-cols-2 px-8 text-white xs:grid">
-          <p className="border-appBlue mb-12 xs:mb-0 pr-5 text-right min-h-[130px] flex items-center">
+          <p className="border-appBlue mb-6 xs:mb-0 pr-5 text-right min-h-[130px] flex items-center">
             {ITEM3}
           </p>
           <p className="border-appBlue  pl-5 text-left min-h-[130px] flex items-center">
@@ -122,7 +122,7 @@ const Mobile = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="px-8 py-4 text-lg font-bold uppercase mt-14 bg-appGreen hover:bg-appBlue hover:text-white">
+        <button className="px-6 py-3 text-lg font-bold uppercase mt-14 bg-appGreen hover:bg-appBlue hover:text-white">
           {BUTTON_TEXT}
         </button>
       </div>

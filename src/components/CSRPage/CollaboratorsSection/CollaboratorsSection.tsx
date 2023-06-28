@@ -15,7 +15,7 @@ const CollaboratorsSection = () => {
   return (
     <section className="w-full max-w-6xl px-8 pb-4 mx-auto">
       <div className="flex flex-col items-center">
-        <p className="max-w-md mt-[200px] text-2xl text-center text-appGreen">
+        <p className="max-w-md lg2:mt-[200px] text-2xl text-center text-appGreen">
           These are some of the organizations I am currently collaborating with
         </p>
         <h2 className="mt-24 text-[2rem] font-bold text-center text-white uppercase">

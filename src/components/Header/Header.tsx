@@ -7,6 +7,7 @@ import useMounted from "@/hooks/useMounted";
 import { navItemsDesktop, navItemsMobile } from "./constants";
 import { AiOutlineMenu } from "react-icons/ai";
 import { LOGO_ICON } from "@/images";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const mounted = useMounted();
@@ -42,13 +43,21 @@ const Desktop = () => {
 };
 
 const Mobile = () => {
+  const router = useRouter();
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
   const handleMobileMenu = () => setToggleMobileMenu((prev) => !prev);
 
   return (
     <nav className="relative px-8">
       <div className="flex justify-between">
-        <Image src={LOGO_ICON} alt="Logo" width={50} height={50} />
+        <Image
+          src={LOGO_ICON}
+          alt="Logo"
+          width={56}
+          height={56}
+          onClick={() => router.push("/")}
+          className="cursor-pointer"
+        />
         <div
           className={classNames(
             "flex items-center gap-2 cursor-pointer",

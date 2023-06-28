@@ -1,12 +1,23 @@
+import useMounted from "@/hooks/useMounted";
 import Image from "next/image";
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 const NewsletterSection = () => {
+  const isMedium = useMediaQuery({ query: "(min-width: 768px)" });
+  const mounted = useMounted();
+
+  if (!mounted) return null;
   return (
     <section className="w-full max-w-6xl px-8 pb-24 mx-auto">
       <div className="flex flex-col items-center justify-center">
-        <Image src="/assets/sword.svg" alt="sword" width={165} height={165} />
-        <h2 className="mb-4 text-[1.875rem] font-bold text-white uppercase mt-[32px]">
+        <Image
+          src="/assets/sword.svg"
+          alt="sword"
+          width={isMedium ? 165 : 105}
+          height={isMedium ? 165 : 105}
+        />
+        <h2 className="text-center mb-4 text-[1.875rem] font-bold text-white uppercase mt-[32px]">
           Do you want to know what I'm up to?
         </h2>
         <p className="max-w-2xl text-center text-white text-[1.5rem] font-[500]">
