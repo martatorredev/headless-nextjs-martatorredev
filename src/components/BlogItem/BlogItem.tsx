@@ -33,7 +33,7 @@ const BlogItem = ({ post }: Props) => {
         }
         className="cursor-pointer"
       />
-      <div className="flex justify-between items-center flex-col w-full px-8 py-8 bg-white min-h-[300px]">
+      <div className="flex justify-between items-center flex-col w-full px-8 py-8 bg-white min-h-[335px]">
         <div className="max-w-[250px] flex flex-col items-center justify-center">
           <div className="flex flex-wrap justify-center gap-4">
             {post?.node?.categories?.nodes?.map((cat, idx) => (

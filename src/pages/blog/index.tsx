@@ -6,30 +6,33 @@ import { client } from "@/graphql/apollo-client";
 import { GET_CATEGORIES, GET_POSTS } from "@/graphql/queries";
 import { CategoriesAPIResponse } from "@/interfaces/CategoriesApi.interface";
 import { LatestsPostsAPIResponse } from "@/interfaces/LatestsPostsApi.interface";
+import { useQuery } from "@apollo/client";
 
-export async function getStaticProps() {
-  const postsData = await client.query<LatestsPostsAPIResponse>({
-    query: GET_POSTS,
-  });
+// export async function getStaticProps() {
+//   const postsData = await client.query<LatestsPostsAPIResponse>({
+//     query: GET_POSTS,
+//   });
 
-  const categoriesData = await client.query<CategoriesAPIResponse>({
-    query: GET_CATEGORIES,
-  });
+//   const categoriesData = await client.query<CategoriesAPIResponse>({
+//     query: GET_CATEGORIES,
+//   });
 
-  return {
-    props: {
-      postsData,
-      categoriesData,
-    },
-  };
-}
+//   return {
+//     props: {
+//       postsData,
+//       categoriesData,
+//     },
+//   };
+// }
 
-type Props = {
-  postsData: LatestsPostsAPIResponse;
-  categoriesData: CategoriesAPIResponse;
-};
+// type Props = {
+//   postsData: LatestsPostsAPIResponse;
+//   categoriesData: CategoriesAPIResponse;
+// };
 
-export default function Page({ postsData, categoriesData }: Props) {
+export default function Page() {
+  const postsData = useQuery(GET_POSTS);
+  const categoriesData = useQuery(GET_CATEGORIES);
   return (
     <main>
       <div className="min-h-[80vh]">
@@ -61,8 +64,12 @@ export default function Page({ postsData, categoriesData }: Props) {
           </p>
         </div>
       </div>
-
-      <PostsSection postsData={postsData} categoriesData={categoriesData} />
+      {postsData.data && categoriesData.data && (
+        <PostsSection
+          postsData={postsData as any}
+          categoriesData={categoriesData as any}
+        />
+      )}
       <NewsletterSection />
       <Footer />
     </main>
