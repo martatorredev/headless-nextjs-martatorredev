@@ -127,3 +127,28 @@ query {
   }
 }
 `;
+
+//obtener todos los post
+export const GET_ALL_POSTS = gql`
+  query {
+    posts {
+      edges {
+        node {
+          id
+          date
+          title
+          categories {
+            nodes {
+              name
+            }
+          }
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  }
+`;
